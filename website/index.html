@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Timepass.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <style>
+        @font-face {
+            font-family: 'myfont';
+            src: url('assets/SEAVER.ttf')  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+             /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+        }
+        body {
+            background: url('./images/background.png') ;
+            margin: 0;
+            overflow-x: hidden;
+            height: 100%;
+        }
+html{
+    height: 100%;
+}
+        #info {
+            position: absolute;
+            top: 0px;
+            background-color: #f4b12c;
+            color: white;
+            font-size:400%;
+            width: 100%;
+            text-align: left;
+            z-index: 100;
+            display:block;
+            font-weight: bold;
+        }
+        #bottom {
+            position: absolute;
+            bottom: 0px;
+            background-color: #f4b12c;
+            color: white;
+            font-size:400%;
+            width: 100%;
+            text-align: left;
+            z-index: 100;
+            display:block;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./assets/Footer-with-logo.css">
+<script src="assets/three.js"></script>
+<script src="assets/projector.js"></script>
+<script src="assets/canvasrender.js"></script>
+<script src="assets/tween.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+    var t = 0
+
+    $(document).ready(function () {
+        $("#total").css({
+            height : $(window).height(),
+            width : $(window).width()
+        })
+        $(window).resize(function () {
+            $("#total").css({
+                height : $(window).height(),
+                width : $(window).width()
+            })
+        })
+
+
+    })
+</script>
+    <div id="info" style="font-family: 'myfont';padding: 0.3%;border-bottom: 5px solid white" >MOVIE PIONEER.</div>
+
+<div id="total">
+
+<div id="about">
+
+</div>
+
+
+<!--<div class="row valign-wrapper " style="margin-top: 17%; bottom : 0">-->
+    <!--<div class="col s6 offset-s3 center-align">-->
+<!--<a class="btn btn-floating pulse" style="background-color: #0032ff" data-scroll-nav="1" ><i class="material-icons" >arrow_drop_down</i></a>-->
+    <!--</div>-->
+<!--</div>-->
+    </div>
+<footer id="myFooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h5 style="padding-bottom: 2%;"> <span style="border-bottom: 5px solid white">Get started</span></h5>
+                <ul>
+                    <li><a href="./form/" type="button" class="btn float-right" >Go To Form</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-6 info">
+                <h5><span style="border-bottom: 5px solid white">About</span></h5>
+                <p style="font-size: 150%;color: white">Want to treat your eyes to a feast best suited to your cinematic palette? Movie Pioneer is here to aid you in your quest for the movie of your dreams. </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="second-bar" style="border-top: 5px solid white">
+        <div class="container">
+            <h2 class="logo"><a href="#" style="font-family: 'myfont';"> MOVIE PIONEER. </a></h2>
+            <div class="social-icons">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

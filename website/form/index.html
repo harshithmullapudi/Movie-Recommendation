@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timepass.#Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/pretty-checkbox.css">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
+   <link rel="stylesheet" href="assets/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/label.css">
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/custom.js"></script>
+    <script src="assets/qrcode.min.js"></script>
+<style>
+    @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+    .pretty
+    {
+        line-height: 0.9;
+    }
+    @font-face {
+        font-family: 'myfont';
+        src: url('../assets/SEAVER.ttf')  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    }
+    @font-face {
+        font-family: questions;
+        src: url("./assets/Toxia_FRE.ttf") format("opentype");
+    }
+</style>
+</head>
+<body style="background:url('../images/productions.jpg') center center;background-size: cover; margin: 3% ">
+<h1 style="color: #f4b12c;font-family: myfont;text-align: center;font-weight: bold;font-size: 500%;margin: 3%;"><span >We'll Avenge It..</span></h1>
+<div style="margin: 5%;padding:1%; box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);background: url('../images/background.png');background-color:white;">
+<h2 style="text-align: center;font-family: 'Kanit', sans-serif;color: #0043A7;padding-bottom: 2%;">"Our constant yearning for illusions explains our thirst for movies."</h2>
+<h5 style="text-align: center;font-family: 'Kanit', sans-serif;color: red;padding-bottom: 2%;">(Check and rate the movies that you have watched.)</h5>
+    <div class="row questions" >
+
+</div>
+<div class="container" style="margin-bottom: 8%;margin-top: 2%;">
+    <button type="button" class="btn float-right nexts" style="background-color: #0043A7;font-size:180%;margin-bottom:10%;font-family: 'Kanit', sans-serif;border-radius:0;color: white" onclick="next()">Next</button>
+    </div >
+    <h2 class="qrheading" style="text-align: center;display: none"> Save the QR to check the list later.</h2>
+
+    <div class="row" style="font-family: myfont">
+
+        <div class="col-sm-4 offset-sm-5" id="qrcode" style="text-align: center"></div>
+    </div>
+
+    </div>
+
+</body>
+</html>
